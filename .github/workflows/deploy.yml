@@ -32,6 +32,7 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # install yarn
+
       - name: Creating React App
         run: yarn build
         
@@ -39,4 +40,4 @@ jobs:
         run: npm install --global surge
         
       - name: Deploying on Surge
-        run: surge ./ bootcampc2.shayan.surge.sh --token ${{ secrets.REACT_BASE_APP_SURGE }}
+        run: surge ./ bootcampc2_shayan.surge.sh --token ${{ secrets.REACT_BASE_APP_SURGE }}
