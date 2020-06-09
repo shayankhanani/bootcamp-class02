@@ -39,4 +39,4 @@ jobs:
         run: npm i -g surge
         
       - name: Deploying on Surge
-        run: surge ./ bootcampc1.shayan.surge.sh --token ${{ secrets.REACT_BASE_APP_SURGE }}
+        run: surge ./ bootcampc2.shayan.surge.sh --token ${{ secrets.REACT_BASE_APP_SURGE }}
