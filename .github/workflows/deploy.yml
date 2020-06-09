@@ -27,7 +27,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 12
+          node-version: '12'
       # Runs a set of commands using the runners shell
       - uses: borales/actions-yarn@v2.0.0
         with:
@@ -36,7 +36,7 @@ jobs:
         run: yarn build
         
       - name: Surge Install
-        run: npm i -g surge
+        run: npm install --global surge
         
       - name: Deploying on Surge
         run: surge ./ bootcampc2.shayan.surge.sh --token ${{ secrets.REACT_BASE_APP_SURGE }}
